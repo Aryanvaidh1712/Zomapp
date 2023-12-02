@@ -82,10 +82,11 @@ header{
 #searchheading{
     /* border: 2px solid red; */
     height: 52px;
-    width: 46%;
+    width: 100%;
     margin-top: 15%;
-    margin-left: 28%;
+    /* margin-left: 28%; */
     position: absolute;
+    text-align: center;
 }
 
 #searchheading > p{
@@ -100,6 +101,7 @@ header{
     width: 50%;
     margin-top: 21%;
     margin-left: 25%;
+    margin-right: 25%;
     position: absolute;
     display: flex;
 }
@@ -124,21 +126,19 @@ header{
 }
 
 #quicksearch{
-    height: 570px;
+    /* height: 570px; */
     /* border: 2px solid red; */
     width: 80%;
     margin-left: 10%;
-}
-
-#qshead{
-    height: 100px;
-    /* border: 2px solid red; */
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .qsheading{
     font-size: 30px;
     font-weight: bolder;
-    margin-top: -1%;
+    display: block;
+    /* margin-top: -1%; */
 }
 
 .qsheading:hover{
@@ -148,15 +148,15 @@ header{
 
 .qssubheading{
     font-size: 20px;
-    margin-top: -2%;
+    /* margin-top: -2%; */
     color: gray;
 }
 
 #qscard{
-    height: 500px;
+    /* height: 500px; */
     /* border: 2px solid red; */
-    margin-top: -3%;
-    /* flex-wrap: flex; */
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .card{
@@ -165,7 +165,6 @@ header{
     /* border: 2px solid gray; */
     margin-top: 4%;
     margin-right: 2.9%;
-    float: left;
     display: flex;
     box-shadow: 10px 20px 30px #3b2632;
     animation: dance 15s infinite;
@@ -237,8 +236,79 @@ header{
 
 footer{
     /* border: 2px solid red; */
-    /* height: 200px; */
+    /* height: 100px; */
     background-color: #3b2632;
     color: white;
+    text-align: center;
 }
 
+#foothead{
+    font-size: 20px;
+}
+
+.footlist{
+    display: inline-block;
+    width: 32%;
+    border-right: 2px solid white;
+}
+
+.noborder{
+    border: none;
+}
+
+.footlist > ul{
+    list-style-type: none;
+}
+
+#footlink > a > img{
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    #searchheading{
+        margin-top: 24%;
+    }
+    #dropdown{
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color: rgb(168 241 209);
+    }
+    #searchheading{
+        margin-top: 28%;
+    }
+    #dropdown{
+        margin-top: 36%;
+    }
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #searchheading{
+        margin-top: 35%;
+    }
+    #dropdown{
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(227 239 214);
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:635px) {
+    #dropdown{
+        margin-top: 62%;
+    }
+}

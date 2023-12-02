@@ -1,0 +1,244 @@
+body{
+    margin: auto;
+    background-color: rgb(241 226 168);
+}
+
+header{
+    height: 60px;
+    /* border: 2px solid green; */
+    background-color: rgb(59 38 50);
+}
+
+#brandname{
+    float: left;
+    color: white;
+    font-size: 30px;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#sociallink{
+    float: right;
+}
+
+#sociallink > a > img{
+    height: 50px;
+    width: 50px;
+    margin-top: 2%;
+    margin-right: -1%;
+}
+
+#search{
+    height: 450px;
+    /* border: 2px solid red; */
+    background-image: url(Image/food-wallpaper.png);
+    background-repeat: no-repeat; 
+    /* background-size: cover; */
+    background-size: 100% 450px;
+}
+
+#logo{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    font-size: 90px;
+    margin-top: 2%;
+    margin-left: 5%;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve{
+    0%{
+        margin-left:2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left:20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left:40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left:80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left:40%;
+        transform: rotate(360deg);
+    }
+}
+
+#logo > p{
+    margin-top: 13%;
+    margin-left: 21%;
+    position: absolute;
+}
+
+#searchheading{
+    /* border: 2px solid red; */
+    height: 52px;
+    width: 46%;
+    margin-top: 15%;
+    margin-left: 28%;
+    position: absolute;
+}
+
+#searchheading > p{
+    font-size: 60px;
+    color: white;
+    margin-top: 0%;
+}
+
+#dropdown{
+    /* border: 2px solid red; */
+    height: 60px;
+    width: 50%;
+    margin-top: 21%;
+    margin-left: 25%;
+    position: absolute;
+    display: flex;
+}
+
+.dropdowncity{
+    /* border: 2px solid white; */
+    width: 43%;
+    height: 60px;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.dropdownrest{
+    /* border: 2px solid white; */
+    width: 56%;
+    height: 60px;
+    margin-left: 1%;
+    background-color: white;
+    font-size: 21px;
+    text-align: center;
+}
+
+#quicksearch{
+    height: 570px;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-left: 10%;
+}
+
+#qshead{
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
+.qsheading{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: -1%;
+}
+
+.qsheading:hover{
+    font-size: 40px;
+    color:green;
+}
+
+.qssubheading{
+    font-size: 20px;
+    margin-top: -2%;
+    color: gray;
+}
+
+#qscard{
+    height: 500px;
+    /* border: 2px solid red; */
+    margin-top: -3%;
+    /* flex-wrap: flex; */
+}
+
+.card{
+    height: 180px;
+    width: 30%;
+    /* border: 2px solid gray; */
+    margin-top: 4%;
+    margin-right: 2.9%;
+    float: left;
+    display: flex;
+    box-shadow: 10px 20px 30px #3b2632;
+    animation: dance 15s infinite;
+}
+
+.card:hover{
+    transform: scale(1.1)
+    /* transform:skewY(30deg)
+    transform:rotate(30deg)
+    transform:translate(100px, 200px) */
+}
+
+@keyframes dance{
+    0%{
+        transform:rotate(-5deg)
+    }
+    25%{
+        transform:rotate(0deg)
+    }
+    40%{
+        transform:scale(1.1)
+    }
+    50%{
+        transform:rotate(5deg)
+    }
+    75%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(-5deg)
+    }   
+}
+
+.cardimg{
+    /* border: 2px solid red; */
+    height: 180px;
+    width: 49%;
+}
+
+.cardimg > img{
+    width: 100%;
+    height: 180px;
+}
+
+.cardtxt{
+    /* border: 2px solid red; */
+    height: 180px;
+    width: 49%;
+}
+
+.cardtxthead{
+    margin-top: 29%;
+    margin-left: 6%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cardtxthead > a{
+    color: black;
+    text-decoration: none;
+}
+
+.cardtxtsubhead{
+    margin-top: 3%;
+    margin-left: 6%;
+    font-size: 20px;
+    color: gray;
+}
+
+footer{
+    /* border: 2px solid red; */
+    /* height: 200px; */
+    background-color: #3b2632;
+    color: white;
+}
+

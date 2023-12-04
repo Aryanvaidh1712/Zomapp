@@ -134,6 +134,11 @@ header{
     margin-bottom: 2%;
 }
 
+.qshead{
+    /* height: 100px; */
+    /* border: 2px solid red; */
+}
+
 .qsheading{
     font-size: 30px;
     font-weight: bolder;
@@ -312,4 +317,3 @@ footer{
         margin-top: 62%;
     }
 }
-
